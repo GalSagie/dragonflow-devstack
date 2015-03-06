@@ -6,7 +6,7 @@ RYU_REPO=${RYU_REPO:-git://github.com/osrg/ryu.git}
 RYU_DIR=$DEST/ryu
 RYU_BRANCH=${RYU_BRANCH:-master}
 
-DF_L3_SERVICE_PLUGIN="dragonflow.neutron.agent.l3.l3_controller_agent.L3ControllerAgent"
+DF_L3_SERVICE_PLUGIN="dragonflow.neutron.services.l3.l3_controller_plugin.ControllerL3ServicePlugin"
 
 DF_L2_AGENT=$DRAGONFLOW_DIR/dragonflow/neutron/agent/l2/ovs_dragonflow_neutron_agent.py
 DF_L3_AGENT=$DRAGONFLOW_DIR/dragonflow/neutron/agent/l3_sdn_agent.py
