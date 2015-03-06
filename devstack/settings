@@ -1,0 +1,16 @@
+export PYTHONPATH=$PYTHONPATH:$DRAGONFLOW_DIR
+
+DRAGONFLOW_REPO=${DRAGONFLOW_REPO:-git://github.com/stackforge/dragonflow.git}
+DRAGONFLOW_DIR=$DEST/dragonflow
+DRAGONFLOW_BRANCH=${DRAGONFLOW_BRANCH:-master}
+
+RYU_REPO=${RYU_REPO:-git://github.com/osrg/ryu.git}
+RYU_DIR=$DEST/ryu
+RYU_BRANCH=${RYU_BRANCH:-master}
+
+L3_SERVICE_PLUGIN="dragonflow.neutron.agent.l3.l3_controller_agent.L3ControllerAgent"
+
+DF_L2_AGENT=
+DF_L3_AGENT=
+
+Q_DF_CONTROLLER_IP=${Q_DF_CONTROLLER_IP:-ml2}
